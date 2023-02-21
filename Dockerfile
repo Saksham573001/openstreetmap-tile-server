@@ -163,5 +163,5 @@ COPY --from=compiler-stylesheet /root/openstreetmap-carto /home/renderer/src/ope
 # Start running
 COPY run.sh /
 ENTRYPOINT ["/run.sh"]
-CMD []
+CMD ["render_list", "-m", "/cogo_primary.xml", "-a", "-z", "0", "-Z", "3", "--num-threads=10"]
 EXPOSE 80 5432
