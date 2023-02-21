@@ -186,10 +186,10 @@ docker run \
     run
 ```
 
-Use the user `renderer` and the database `gis` to connect.
+Use the user `renderer` and the database `locations` to connect.
 
 ```
-psql -h localhost -U renderer gis
+psql -h localhost -U renderer locations
 ```
 
 The default password is `renderer`, but it can be changed using the `PGPASSWORD` environment variable:
